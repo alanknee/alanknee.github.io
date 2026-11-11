@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alan Matthew Knee | Gravitational-wave astrophysicist</title>
+    <meta name="description" content="Personal research website of Alan M. Knee">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #fff;
+        }
+
+        a {
+            color: #356a9a;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navigation */
+        header {
+            border-bottom: 1px solid #e5e5e5;
+            padding: 20px 0;
+        }
+
+        nav {
+            max-width: 900px;
+            margin: auto;
+            padding: 0 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #222;
+        }
+
+        nav .links a {
+            margin-left: 20px;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* Main content */
+        main {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 25px;
+        }
+
+        section {
+            margin-bottom: 55px;
+            scroll-margin-top: 25px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 5px;
+            color: #222;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #222;
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            color: #777;
+            font-size: 1.1rem;
+        }
+
+        /* Profile section */
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .profile-photo {
+            width: 190px;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .profile-text {
+            flex: 1;
+        }
+
+        /* CV link */
+        .cv-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 18px;
+            border: 1px solid #356a9a;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #e5e5e5;
+            text-align: center;
+            padding: 25px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile layout */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav .links a {
+                margin: 0 8px;
+            }
+
+            .profile {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+
+            .profile-photo {
+                width: 160px;
+                height: 190px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            main {
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="name">Alan M. Knee</div>
+
+            <div class="links">
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#cv">CV</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- About -->
+        <section id="about">
+            <div class="profile">
+
+                <img src="profile.jpg"
+                     alt="Profile photo of Alan Knee"
+                     class="profile-photo">
+
+                <div class="profile-text">
+                    <h1>About me</h1>
+
+                    <p>
+                        I am a professional astrophysicist specializing in gravitational waves.
+                        My research focuses on analyzing data from gravitational-wave observatories 
+                        in order to learn more about extreme objects, such as black holes and neutron stars.
+                    </p>
+
+                    <p>
+                        I obtained a Ph.D. in astronomy from the University of British Columbia in 2025, 
+                        supervised by Dr. Jess McIver.
+                        I am currently a postdoctoral research fellow at the University of Michigan.
+                        I have been an active member of the LIGO Scientific Collaboration since 2019.
+                    </p>
+
+                    <p>
+                        Lately my work has focused heavily on the search for continuous gravitational waves (CWs)
+                        emitted by rapidly rotating neutron stars that sustain long-lived deformations.
+                        I build and deploy large-scale data analysis pipelines in an effort to search
+                        for these elusive signals.
+                        My work includes wide-parameter-space all-sky searches, searches that account for irregular
+                        phase evolution, pulsar glitches, and detector characterization.
+                        I have also been interested in the observational capabilities of the future space-based LISA
+                        detector, which will provide new opportunities to study the formation and evolution of compact
+                        binaries.
+                    </p>
+
+                    <p>
+                        Please contact me at
+                        <a href="mailto:aknee@umich.edu">
+                            aknee@umich.edu
+                        </a> if you'd like to chat.
+                    </p>
+                  
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Research -->
+        <section id="research">
+            <h2>Research interests</h2>
+
+            <ul>
+                <li><strong>Astrophysics:</strong> Gravitational waves from spinning neutron stars, merging compact binaries, hierarchical triple systems</li>
+                <li><strong>Data analysis:</strong> Gravitational-wave data analysis/signal processing, matched filter searches, hidden Markov models, Bayesian parameter estimation</li>
+                <li><strong>Detector physics:</strong> LIGO detector characterization, data quality assessment</li>
+            </ul>
+        </section>
+
+        <!-- CV -->
+        <section id="cv">
+            <h2>Curriculum Vitae</h2>
+
+            <p>
+                Please see my CV for my full academic background and work experience.
+            </p>
+
+            <a href="long.pdf" class="cv-link" target="_blank">
+                View CV (PDF)
+            </a>
+
+            <p>
+              <i>Updated 11 Nov 2026</i>
+            </p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <p>
+                Email:
+                <a href="mailto:aknee@umich.edu">
+                    aknee@umich.edu
+                </a>
+            </p>
+
+            <p>
+                <a href="https://orcid.org/0000-0003-0703-947X" target="_blank">ORCID</a>
+                &nbsp;|&nbsp;
+                <a href="https://inspirehep.net/authors/1874779" target="_blank">INSPIRE</a>
+                &nbsp;|&nbsp;
+                <a href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&p_=0&q=author%3A%22Knee%2C%20Alan%22&sort=date%20desc%2C%20bibcode%20desc" target="_blank">NASA ADS</a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2026 Alan M. Knee
+    </footer>
+
+</body>
+</html>
