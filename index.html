@@ -96,6 +96,16 @@
             gap: 40px;
         }
 
+        .profile-text {
+            flex: 1;
+        }
+
+        .profile-container {
+            width: 190px;
+            flex-shrink: 0;
+            text-align: center;
+        }
+        
         .profile-photo {
             width: 190px;
             height: 230px;
@@ -103,8 +113,15 @@
             border-radius: 8px;
         }
 
-        .profile-text {
-            flex: 1;
+        .profile-caption {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #777;
+            line-height: 1.5;
+        }
+        
+        .profile-caption strong {
+            color: #333;
         }
 
         /* CV link */
@@ -187,7 +204,7 @@
                          class="profile-photo">
                 
                     <div class="profile-caption">
-                        Alan M. Knee
+                        <strong>Alan M. Knee</strong>
                         <br>
                         Research Fellow at UMich
                     </div>
