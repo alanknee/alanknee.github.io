@@ -217,6 +217,17 @@
             text-decoration: none;
             transform: translateY(-2px);
         }
+
+        .cv-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .cv-updated {
+            color: #8793a1;
+            font-size: 0.9rem;
+        }
         
         /* Contact */
         #contact a {
@@ -362,7 +373,7 @@
                         Please contact me at
                         <a href="mailto:aknee@umich.edu">
                             aknee@umich.edu
-                        </a> if you'd like to talk
+                        </a> if you'd like to talk.
                     </p>
                   
                 </div>
@@ -389,13 +400,13 @@
                 Please see my CV for my full academic background, work experience, and publication list.
             </p>
 
-            <a href="long.pdf" class="cv-link" target="_blank">
-                View CV (PDF)
-            </a>
-
-            <p>
-              <i>Updated 11 Nov 2026</i>
-            </p>
+            <div class="cv-row">
+                <a href="long.pdf" class="cv-link" target="_blank">
+                    View CV (PDF)
+                </a>
+            
+                <i class="cv-updated">Updated 11 Nov 2026</i>
+            </div>
         </section>
 
         <!-- Contact -->
